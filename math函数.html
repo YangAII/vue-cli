@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <input type="button" name="" value="获取随机数" onclick="hhh()">
+    </body>
+    <script>
+        function res(num){
+            return Math.random()*num;
+        };
+        function hhh(){
+            alert('点击了')
+            document.write(res(66))
+        };
+        function Pelple(name,age){
+            this.name=name;
+            this.age=age;
+            console.log(this);
+        };
+        Pelple.prototype.color="red"
+        // console.log(Pelple.color)
+        var people=new Pelple("martin",26);
+        alert(people.color);
+        console.log(people.name);
+        function People2(){
+            
+        }
+        var people2=new People2();
+        People2.prototype=people;
+        console.log(people2)
+
+    </script>
+</html>
